@@ -4,7 +4,7 @@ const path = require('path');
 const helmet = require('helmet');
 const Router = require('./routes/router');
 const config = require('./config');
-// const https = require('https') 
+const https = require('https') 
 const sequelize = require('./database');
 const Contacts = require('./models/Contacts');
 const ContactsMapping = require('./models/Contact_mapping');
@@ -18,10 +18,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', Router);
 
 async function initializeServer(){
-    http.createServer(app).listen(config.PORT.HTTP,()=>{
-        console.log("server listening on 80")
-    }); 
-    // https.createServer({ ... }, app).listen(443);
+    // http.createServer(app).listen(config.PORT.HTTP,()=>{
+    //     console.log("server listening on 80")
+    // }); 
+    https.createServer(app).listen(3000);
 }
 
 async function initializeDatabase() {
