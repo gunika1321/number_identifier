@@ -21,7 +21,9 @@ async function initializeServer(){
     // http.createServer(app).listen(config.PORT.HTTP,()=>{
     //     console.log("server listening on 80")
     // }); 
-    https.createServer(app).listen(3000);
+    https.createServer(app).listen(3000, ()=>{
+        console.log("server listening on 3000")
+    });
 }
 
 async function initializeDatabase() {
