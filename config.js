@@ -3,7 +3,7 @@ module.exports = {
       username: 'sql6689565',
       password: 'QKczqTxZHa',
       database: 'sql6689565',
-      host: 'sql6.freesqldatabase.com',
+      host: '52.74.77.8',
       dialect: 'mysql', 
     },
     PORT:{
