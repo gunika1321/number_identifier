@@ -1,9 +1,9 @@
 module.exports = {
     MYSQL: {
-      username: '',
-      password: '',
-      database: '',
-      host: '',
+      username: 'sql6689565',
+      password: 'QKczqTxZHa',
+      database: 'sql6689565',
+      host: 'sql6.freesqldatabase.com',
       dialect: 'mysql', 
     },
     PORT:{
